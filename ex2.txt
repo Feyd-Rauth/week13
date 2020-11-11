@@ -1,0 +1,5 @@
+Recovery strategy is better in big systems with large amount of data, such as servers. Prevention, in this case it will use much more resources, due to server system high throughoutput. With that throughoutput is more complex to check each process. We also cannot use avoidance, due to ability to run custom software which makes prediction of deadlocks more complex.
+
+Prevention is used in systems where stability is crucial. For instance hard real-time systems. Recovery may lead to killing an importatnt process, for example in software of self-driving car. Avoidance is not a good choise due to complexity of that kind of systems - it is hard to presicely determine all possible deadlock situations.
+
+Avoidance good in embedded systems, for instance smart fridge. Efficiency here is not crucial, but we care about ease of implementation. These systems are small and predictable, because generally it can run only one set of programs that installed initially in systems and we can easy predict possible deadlocks.
